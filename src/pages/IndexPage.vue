@@ -42,7 +42,8 @@ const totalPosts = computed<number>(() => {
 });
 // totalPages for pagination
 const totalPages = computed<number>(() => {
-  return Math.ceil(totalPosts.value / postsPerPage.value);
+  const clices = Math.ceil(totalPosts.value / postsPerPage.value);
+  return Math.ceil(clices);
 });
 // displayedPosts for pagination
 const displayedPosts = computed<Posts[]>(() => {
